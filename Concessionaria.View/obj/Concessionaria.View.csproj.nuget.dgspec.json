@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pichau\\source\\repos\\ConcessionariaLabProg-master\\Concessionaria.View\\Concessionaria.View.csproj": {}
+    "C:\\Users\\joaom\\Documents\\ConcessionariaTrabAV1\\Concessionaria.View\\Concessionaria.View.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pichau\\source\\repos\\ConcessionariaLabProg-master\\Concessionaria.Model\\Concessionaria.Model.csproj": {
+    "C:\\Users\\joaom\\Documents\\ConcessionariaTrabAV1\\Concessionaria.Model\\Concessionaria.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pichau\\source\\repos\\ConcessionariaLabProg-master\\Concessionaria.Model\\Concessionaria.Model.csproj",
+        "projectUniqueName": "C:\\Users\\joaom\\Documents\\ConcessionariaTrabAV1\\Concessionaria.Model\\Concessionaria.Model.csproj",
         "projectName": "Concessionaria.Model",
-        "projectPath": "C:\\Users\\Pichau\\source\\repos\\ConcessionariaLabProg-master\\Concessionaria.Model\\Concessionaria.Model.csproj",
-        "packagesPath": "C:\\Users\\Pichau\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pichau\\source\\repos\\ConcessionariaLabProg-master\\Concessionaria.Model\\obj\\",
+        "projectPath": "C:\\Users\\joaom\\Documents\\ConcessionariaTrabAV1\\Concessionaria.Model\\Concessionaria.Model.csproj",
+        "packagesPath": "C:\\Users\\joaom\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\joaom\\Documents\\ConcessionariaTrabAV1\\Concessionaria.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Pichau\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\joaom\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -80,20 +81,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.22, 6.0.22]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.22, 6.0.22]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.22, 6.0.22]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -103,20 +90,20 @@
         }
       }
     },
-    "C:\\Users\\Pichau\\source\\repos\\ConcessionariaLabProg-master\\Concessionaria.View\\Concessionaria.View.csproj": {
+    "C:\\Users\\joaom\\Documents\\ConcessionariaTrabAV1\\Concessionaria.View\\Concessionaria.View.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pichau\\source\\repos\\ConcessionariaLabProg-master\\Concessionaria.View\\Concessionaria.View.csproj",
+        "projectUniqueName": "C:\\Users\\joaom\\Documents\\ConcessionariaTrabAV1\\Concessionaria.View\\Concessionaria.View.csproj",
         "projectName": "Concessionaria.View",
-        "projectPath": "C:\\Users\\Pichau\\source\\repos\\ConcessionariaLabProg-master\\Concessionaria.View\\Concessionaria.View.csproj",
-        "packagesPath": "C:\\Users\\Pichau\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pichau\\source\\repos\\ConcessionariaLabProg-master\\Concessionaria.View\\obj\\",
+        "projectPath": "C:\\Users\\joaom\\Documents\\ConcessionariaTrabAV1\\Concessionaria.View\\Concessionaria.View.csproj",
+        "packagesPath": "C:\\Users\\joaom\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\joaom\\Documents\\ConcessionariaTrabAV1\\Concessionaria.View\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Pichau\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\joaom\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -125,14 +112,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Pichau\\source\\repos\\ConcessionariaLabProg-master\\Concessionaria.Model\\Concessionaria.Model.csproj": {
-                "projectPath": "C:\\Users\\Pichau\\source\\repos\\ConcessionariaLabProg-master\\Concessionaria.Model\\Concessionaria.Model.csproj"
+              "C:\\Users\\joaom\\Documents\\ConcessionariaTrabAV1\\Concessionaria.Model\\Concessionaria.Model.csproj": {
+                "projectPath": "C:\\Users\\joaom\\Documents\\ConcessionariaTrabAV1\\Concessionaria.Model\\Concessionaria.Model.csproj"
               }
             }
           }
@@ -183,24 +171,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.22, 6.0.22]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.22, 6.0.22]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.22, 6.0.22]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.22, 6.0.22]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"

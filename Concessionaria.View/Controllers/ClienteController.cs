@@ -29,7 +29,8 @@ namespace Concessionaria.View.Controllers
         {
             var oCliente = await repositoryCliente.IncluirAsync(cliente);
 
-            return View(oCliente);
+            return RedirectToAction("Index", oCliente);
+            
         }
 
         [HttpGet]
@@ -47,7 +48,7 @@ namespace Concessionaria.View.Controllers
             {
                 var oCliente = await repositoryCliente.AlterarAsync(cliente);
 
-                return View(oCliente);
+                return RedirectToAction("Index", oCliente);
             }
             ViewData["MensagemErro"] = "Ocorreu um erro";
 

@@ -36,7 +36,7 @@ namespace Concessionaria.View.Controllers
         {
             CarregaDados();
             var oVenda = await repositoryVenda.IncluirAsync(venda);
-            return View(oVenda);
+            return RedirectToAction("Index", oVenda);
         }
 
         [HttpGet]
@@ -54,7 +54,7 @@ namespace Concessionaria.View.Controllers
             {
                 var oVenda = await repositoryVenda.AlterarAsync(venda);
 
-                return View(oVenda);
+                return RedirectToAction("Index", oVenda);
             }
             ViewData["MensagemErro"] = "Ocorreu um erro";
 

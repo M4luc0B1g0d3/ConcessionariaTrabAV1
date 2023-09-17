@@ -1,4 +1,5 @@
-﻿using Concessionaria.Model.Repositories;
+﻿using Concessionaria.Model.Models;
+using Concessionaria.Model.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Concessionaria.View.Controllers
@@ -28,7 +29,7 @@ namespace Concessionaria.View.Controllers
         {
             var oConcessionaria = await repositoryConcessionaria.IncluirAsync(concessionaria);
 
-            return View(oConcessionaria);
+            return RedirectToAction("Index", oConcessionaria);
         }
 
         [HttpGet]
@@ -46,7 +47,7 @@ namespace Concessionaria.View.Controllers
             {
                 var oConcessionaria = await repositoryConcessionaria.AlterarAsync(concessionaria);
 
-                return View(oConcessionaria);
+                return RedirectToAction("Index", oConcessionaria);
             }
             ViewData["MensagemErro"] = "Ocorreu um erro";
 

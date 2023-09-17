@@ -1,4 +1,5 @@
-﻿using Concessionaria.Model.Models;
+﻿using Concessionaria.Model.Interfaces;
+using Concessionaria.Model.Models;
 using Concessionaria.Model.Repositories;
 using Concessionaria.View.ViewModel;
 using Microsoft.AspNetCore.Mvc;
@@ -37,11 +38,13 @@ namespace Concessionaria.View.Controllers
         {
             if (ModelState.IsValid)
             {
-                veiculo = await repositoryVeiculo.AlterarAsync(veiculo);
-                CarregaDadosViewBag();
-                return View(veiculo);
+                var oVeiculo = await repositoryVeiculo.AlterarAsync(veiculo);
+
+                return RedirectToAction("Index", oVeiculo);
             }
-            return View(veiculo);
+            ViewData["MensagemErro"] = "Ocorreu um erro";
+
+            return View();
         }
 
         [HttpGet]
@@ -85,11 +88,11 @@ namespace Concessionaria.View.Controllers
             {
                 veiculo = await repositoryVeiculo.IncluirAsync(veiculo);
 
-                return View(veiculo);
+                return RedirectToAction("Index", veiculo);
             }
             else
             {
-                return View(veiculo);
+                return RedirectToAction("Index", veiculo);
             }
         }
     }
