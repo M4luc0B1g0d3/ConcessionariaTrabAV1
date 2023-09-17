@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concessionaria.View", "Concessionaria.View\Concessionaria.View.csproj", "{A5C6D8DA-3061-4F1D-B490-B523F9003EB3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{929D81EA-4C39-4019-AB8B-746C6508C94A} = {929D81EA-4C39-4019-AB8B-746C6508C94A}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concessionaria.Model", "Concessionaria.Model\Concessionaria.Model.csproj", "{929D81EA-4C39-4019-AB8B-746C6508C94A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5C6D8DA-3061-4F1D-B490-B523F9003EB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5C6D8DA-3061-4F1D-B490-B523F9003EB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5C6D8DA-3061-4F1D-B490-B523F9003EB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5C6D8DA-3061-4F1D-B490-B523F9003EB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{929D81EA-4C39-4019-AB8B-746C6508C94A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{929D81EA-4C39-4019-AB8B-746C6508C94A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{929D81EA-4C39-4019-AB8B-746C6508C94A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{929D81EA-4C39-4019-AB8B-746C6508C94A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3168C16A-4CC4-47F7-BBC1-AA1E0C288C4B}
+	EndGlobalSection
+EndGlobal

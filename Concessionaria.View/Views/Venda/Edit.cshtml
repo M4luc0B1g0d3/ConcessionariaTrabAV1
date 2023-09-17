@@ -1,0 +1,48 @@
+﻿@model Concessionaria.Model.Models.Venda
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Vendas</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="IdVenda" class="control-label"></label>
+                <input type="hidden" asp-for="IdVenda" class="form-control" />
+                <span asp-validation-for="IdVenda" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <select class="form-select" asp-for="ClienteIdCliente" asp-items="@ViewBag.IdCliente">
+                    <option selected value="">Selecione um Cliente</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select class="form-select" asp-for="VeiculoIdVeiculo" asp-items="@ViewBag.IdVeiculo">
+                    <option selected value="">Selecione um Veiculo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataVenda" class="control-label"></label>
+                <input asp-for="DataVenda" class="form-control" />
+                <span asp-validation-for="DataVenda" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Voltar a Lista</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

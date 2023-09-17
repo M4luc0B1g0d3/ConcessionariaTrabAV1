@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Concessionaria.Model.Models.Concessionaria>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Lista de Concessionarias</h1>
+
+<p>
+    <a asp-action="Create">Adicionar uma nova concessionaria</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cnpj)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cidade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cnpj)
+            </td>
+            <td>
+                    @Html.ActionLink("Edit", "Edit", new { id=item.IdConcessionaria }) |
+                @Html.ActionLink("Details", "Details", new { id=item.IdConcessionaria }) |
+                    @Html.ActionLink("Delete", "Delete", new { id=item.IdConcessionaria })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

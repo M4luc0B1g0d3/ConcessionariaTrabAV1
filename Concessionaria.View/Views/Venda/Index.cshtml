@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Concessionaria.View.ViewModel.VendaVM>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Lista de Vendas</h1>
+
+<p>
+    <a asp-action="Create">Adicionar uma Venda</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeVeiculo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeCliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataVenda)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeVeiculo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeCliente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataVenda)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new {  id=item.Codigo }) |
+                @Html.ActionLink("Details", "Details", new {  id=item.Codigo }) |
+                @Html.ActionLink("Delete", "Delete", new {  id=item.Codigo })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
