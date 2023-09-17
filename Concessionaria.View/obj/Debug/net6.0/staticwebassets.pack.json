@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\joaom\\Documents\\ConcessionariaTrabAV1\\Concessionaria.View\\wwwroot\\imagens\\carrosel1.jpg",
+      "PackagePath": "staticwebassets\\imagens\\carrosel1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\joaom\\Documents\\ConcessionariaTrabAV1\\Concessionaria.View\\wwwroot\\imagens\\carrosel2.jpg",
+      "PackagePath": "staticwebassets\\imagens\\carrosel2.jpg"
+    },
+    {
       "Id": "C:\\Users\\joaom\\Documents\\ConcessionariaTrabAV1\\Concessionaria.View\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

@@ -86,7 +86,7 @@ public partial class ConcessionariaDBContext : DbContext
             entity.HasOne(d => d.ConcessionariaIdConcessionariaNavigation).WithMany(p => p.Veiculo)
                 .HasForeignKey(d => d.ConcessionariaIdConcessionaria)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Veiculo__Concess__4D94879B");
+                /*.HasConstraintName("FK__Veiculo__Concess__4D94879B")*/;
         });
 
         modelBuilder.Entity<Venda>(entity =>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NkSkjfCgXDhvWTJhTTzhsuvmVfNlogiaoArpSMXKFRw=",
+  "Hash": "EgdG6mgq7Bcic/rsrLT/tKGuz5fwwHWwUlcKq7Jigw8=",
   "Source": "Concessionaria.View",
   "BasePath": "_content/Concessionaria.View",
   "Mode": "Default",
@@ -83,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\joaom\\Documents\\ConcessionariaTrabAV1\\Concessionaria.View\\wwwroot\\imagens\\carrosel1.jpg",
+      "SourceId": "Concessionaria.View",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\joaom\\Documents\\ConcessionariaTrabAV1\\Concessionaria.View\\wwwroot\\",
+      "BasePath": "_content/Concessionaria.View",
+      "RelativePath": "imagens/carrosel1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\carrosel1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\joaom\\Documents\\ConcessionariaTrabAV1\\Concessionaria.View\\wwwroot\\imagens\\carrosel2.jpg",
+      "SourceId": "Concessionaria.View",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\joaom\\Documents\\ConcessionariaTrabAV1\\Concessionaria.View\\wwwroot\\",
+      "BasePath": "_content/Concessionaria.View",
+      "RelativePath": "imagens/carrosel2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\carrosel2.jpg"
     },
     {
       "Identity": "C:\\Users\\joaom\\Documents\\ConcessionariaTrabAV1\\Concessionaria.View\\wwwroot\\js\\site.js",
