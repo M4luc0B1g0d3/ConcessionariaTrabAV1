@@ -14,6 +14,7 @@ public partial class Venda
     [DisplayName("Codigo")]
     public int IdVenda { get; set; }
 
+    [DisplayName("Cliente")]
     [HiddenInput(DisplayValue = false)]
     public int ClienteIdCliente { get; set; }
     

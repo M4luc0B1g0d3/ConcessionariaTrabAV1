@@ -13,6 +13,7 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
+                <label asp-for="ConcessionariaIdConcessionaria" class="control-label"></label>
                 <select class="form-select" asp-for="ConcessionariaIdConcessionaria" asp-items="@ViewBag.IdConcessionaria">
                     <option selected value="">Selecione uma Concessionaria</option>
                 </select>

@@ -1,6 +1,8 @@
-﻿using Concessionaria.Model.Models;
+﻿using Concessionaria.Model.Interfaces;
+using Concessionaria.Model.Models;
 using Concessionaria.Model.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Concessionaria.View.Controllers
 {
@@ -67,7 +69,7 @@ namespace Concessionaria.View.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             var detalhes = await repositoryCliente.SelecionarPkAsync(id);
-
+            ViewData["Erro"] = "Erro";
             return View(detalhes);
         }
 
@@ -75,6 +77,7 @@ namespace Concessionaria.View.Controllers
         public async Task<IActionResult> Delete(Cliente cliente)
         {
             var oCliente = await repositoryCliente.SelecionarPkAsync(cliente.IdCliente);
+            
             await repositoryCliente.ExcluirAsync(oCliente);
             return RedirectToAction("Index");
         }

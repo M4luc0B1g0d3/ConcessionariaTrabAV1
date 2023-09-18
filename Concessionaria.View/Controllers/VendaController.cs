@@ -89,6 +89,7 @@ namespace Concessionaria.View.Controllers
         {
             ViewData["IdCliente"] = new SelectList(repositoryCliente.SelecionarTodos(), "IdCliente", "Nome");
             ViewData["IdVeiculo"] = new SelectList(repositoryVeiculo.SelecionarTodos(), "IdVeiculo", "Nome");
+
         }
     }
 }
