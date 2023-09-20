@@ -9,10 +9,12 @@ namespace Concessionaria.View.Controllers
     public class ClienteController : Controller
     {
         private RepositoryCliente repositoryCliente;
+        private RepositoryVenda repositoryVenda;
 
         public ClienteController()
         {
             repositoryCliente = new RepositoryCliente();
+            repositoryVenda = new RepositoryVenda();
         }
         public async Task<IActionResult> Index()
         {
@@ -69,7 +71,6 @@ namespace Concessionaria.View.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             var detalhes = await repositoryCliente.SelecionarPkAsync(id);
-            ViewData["Erro"] = "Erro";
             return View(detalhes);
         }
 
@@ -77,7 +78,13 @@ namespace Concessionaria.View.Controllers
         public async Task<IActionResult> Delete(Cliente cliente)
         {
             var oCliente = await repositoryCliente.SelecionarPkAsync(cliente.IdCliente);
-            
+
+            var venda = await repositoryVenda.SelecionarPkClienteAsync(cliente.IdCliente);
+            if (venda != null)
+            {
+                ViewData["Erro"] = "Erro";
+                return View(oCliente);
+            }
             await repositoryCliente.ExcluirAsync(oCliente);
             return RedirectToAction("Index");
         }

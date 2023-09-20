@@ -11,7 +11,7 @@ namespace Concessionaria.Model.Models;
 public partial class Venda
 {
     [HiddenInput(DisplayValue = false)]
-    [DisplayName("Codigo")]
+    [DisplayName("Código")]
     public int IdVenda { get; set; }
 
     [DisplayName("Cliente")]
@@ -19,6 +19,7 @@ public partial class Venda
     public int ClienteIdCliente { get; set; }
     
     [HiddenInput(DisplayValue = false)]
+    [DisplayName("Veículo")]
     public int VeiculoIdVeiculo { get; set; }
 
     [DisplayName("Data Da Venda")]

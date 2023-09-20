@@ -11,7 +11,7 @@ namespace Concessionaria.Model.Models;
 public partial class Cliente
 {
     [HiddenInput(DisplayValue = false)]
-    [DisplayName("Codigo")]
+    [DisplayName("Código")]
     public int IdCliente { get; set; }
 
     [DisplayName("Nome")]

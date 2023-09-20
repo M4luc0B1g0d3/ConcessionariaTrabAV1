@@ -81,6 +81,7 @@ namespace Concessionaria.View.Controllers
         public async Task<IActionResult> Delete(VendaVM venda)
         {
             var oVenda = await repositoryVenda.SelecionarPkAsync(venda.Codigo);
+
             await repositoryVenda.ExcluirAsync(oVenda);
             return RedirectToAction("Index");
         }

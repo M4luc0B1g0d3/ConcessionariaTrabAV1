@@ -1,5 +1,7 @@
-﻿using Concessionaria.Model.Models;
+﻿using Concessionaria.Model.Interfaces;
+using Concessionaria.Model.Models;
 using Concessionaria.Model.Repositories;
+using Concessionaria.View.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Concessionaria.View.Controllers
@@ -7,9 +9,11 @@ namespace Concessionaria.View.Controllers
     public class ConcessionariaController : Controller
     {
         private RepositoryConcessionaria repositoryConcessionaria;
+        private RepositoryVeiculo repositoryVeiculo;
         public ConcessionariaController()
         {
             repositoryConcessionaria = new RepositoryConcessionaria();
+            repositoryVeiculo = new RepositoryVeiculo();
         }
         public async Task<IActionResult> Index()
         {
@@ -71,9 +75,16 @@ namespace Concessionaria.View.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Deletar(Model.Models.Concessionaria concessionaria)
+        public async Task<IActionResult> Delete(Model.Models.Concessionaria concessionaria)
         {
             var loja = await repositoryConcessionaria.SelecionarPkAsync(concessionaria.IdConcessionaria);
+
+            var veiculo = await repositoryVeiculo.SelecionarPkConcessionariaAsync(concessionaria.IdConcessionaria);
+            if (veiculo != null)
+            {
+                ViewData["Erro"] = "Erro";
+                return View(loja);
+            }
             await repositoryConcessionaria.ExcluirAsync(loja);
             return RedirectToAction("Index");
         }

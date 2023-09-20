@@ -67,3 +67,13 @@
         <a class="btn btn-success" asp-action="Index">Voltar a Lista</a>
     </form>
 </div>
+<script>
+    var check = @Html.Raw(Json.Serialize(ViewData["Erro"]));
+    if(check){
+        Swal.fire({
+            icon: 'error',
+            title: 'Veículo ativo em venda!',
+            text: 'Resolva o conflito na venda para apagar esse veículo.'
+        });
+    }
+</script>

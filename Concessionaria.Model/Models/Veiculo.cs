@@ -11,10 +11,11 @@ namespace Concessionaria.Model.Models;
 public partial class Veiculo
 {
     [HiddenInput(DisplayValue = false)]
-    [DisplayName("Codigo")]
+    [DisplayName("Código")]
     public int IdVeiculo { get; set; }
 
     [HiddenInput(DisplayValue = false)]
+    [DisplayName("Concessionária")]
     public int ConcessionariaIdConcessionaria { get; set; }
 
     [DisplayName("Nome")]

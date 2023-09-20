@@ -12,11 +12,13 @@ namespace Concessionaria.View.Controllers
     {
         private RepositoryVeiculo repositoryVeiculo;
         private RepositoryConcessionaria repositoryConcessionaria;
+        private RepositoryVenda repositoryVenda;
 
         public VeiculoController()
         {
             repositoryVeiculo = new RepositoryVeiculo();
             repositoryConcessionaria = new RepositoryConcessionaria();
+            repositoryVenda = new RepositoryVenda();
         }
 
         public IActionResult Index()
@@ -65,6 +67,14 @@ namespace Concessionaria.View.Controllers
         public async Task<IActionResult> Delete(VeiculoVM veiculoVM)
         {
             var auto = await repositoryVeiculo.SelecionarPkAsync(veiculoVM.Codigo);
+
+            var venda = await repositoryVenda.SelecionarPkClienteAsync(veiculoVM.Codigo);
+            if (venda != null)
+            {
+                veiculoVM = VeiculoVM.SelecionarVeiculo(veiculoVM.Codigo);
+                ViewData["Erro"] = "Erro";
+                return View(veiculoVM);
+            }
             await repositoryVeiculo.ExcluirAsync(auto);
             return RedirectToAction("Index");
         }
